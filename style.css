@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: light;
+    --bg: #f4f1ee;
+    --panel: #ffffff;
+    --text: #1f1f1f;
+    --muted: #6b6b6b;
+    --accent: #b11c2f;
+    --accent-dark: #7f0f20;
+    --card-dark: #2d2d2f;
+    --shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --radius-sm: 10px;
+    --font: "Trebuchet MS", "Lucida Grande", "Tahoma", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: var(--panel);
+    font-family: var(--font);
+    color: var(--text);
+}
+
+
+.app {
+    min-height: 100vh;
+    display: block;
+    padding: 20px 16px 32px;
+}
+
+.panel {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    position: relative;
+}
+
+.greeting h1 {
+    font-size: 24px;
+    margin: 0 0 4px;
+}
+
+.greeting .date {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.quick-actions {
+    display: flex;
+    gap: 10px;
+    margin: 14px 0 18px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+}
+
+.quick-actions::-webkit-scrollbar {
+    height: 4px;
+}
+
+.quick-actions::-webkit-scrollbar-thumb {
+    background: #d7d1cb;
+    border-radius: 99px;
+}
+
+.pill {
+    border: none;
+    background: #ece7e3;
+    color: #2f2f2f;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.pill-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-grid;
+    place-items: center;
+    background: #ffffff;
+    font-weight: 700;
+}
+
+.section {
+    margin-bottom: 18px;
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.section h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.link-button {
+    border: none;
+    background: none;
+    color: var(--accent);
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.card {
+    position: relative;
+    border-radius: var(--radius-lg);
+    padding: 16px;
+    color: #fff;
+    margin-bottom: 12px;
+    overflow: hidden;
+    min-height: 120px;
+}
+
+.withdraw-card {
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    background: linear-gradient(135deg, #2f3136 0%, #1a1b1f 45%, #121317 100%);
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: 0 16px 26px rgba(0, 0, 0, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.withdraw-card:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+.withdraw-card::before {
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.18), transparent 65%);
+    top: -16px;
+    right: -10px;
+    opacity: 0.8;
+}
+
+.withdraw-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.05) 45%, transparent 70%);
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.withdraw-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.3);
+}
+
+.withdraw-card:active {
+    transform: translateY(0);
+}
+
+.withdraw-text {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.withdraw-text::before {
+    content: "↓";
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    display: inline-grid;
+    place-items: center;
+    background: linear-gradient(135deg, #d2263a 0%, #8b0e20 100%);
+    box-shadow: 0 8px 16px rgba(178, 27, 47, 0.35);
+    font-size: 16px;
+}
+
+.card-primary {
+    background: linear-gradient(135deg, var(--accent) 0%, #d2263a 60%, #8b0e20 100%);
+}
+
+.card-dark {
+    background: linear-gradient(135deg, #343437 0%, #1f1f21 80%);
+}
+
+.card-brand {
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+
+.card-subtitle {
+    font-size: 13px;
+    opacity: 0.9;
+    margin-top: 2px;
+}
+
+.card-tail {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+.card-balance {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.amount {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.label {
+    font-size: 11px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+.card-horse {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.18), transparent 55%);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.services h2 {
+    margin-bottom: 12px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.service {
+    border: none;
+    background: #f3efec;
+    border-radius: var(--radius-md);
+    padding: 10px 8px;
+    display: grid;
+    gap: 8px;
+    text-align: center;
+    font-size: 11px;
+    color: #2a2a2a;
+}
+
+.service-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: #fff;
+    display: grid;
+    place-items: center;
+    color: var(--accent);
+}
+
+.service-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+}
+
+.service-label {
+    line-height: 1.2;
+}
+
+.bottom-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding-top: 10px;
+    border-top: 1px solid #e5e0dc;
+}
+
+.nav-item {
+    border: none;
+    background: none;
+    font-size: 10.5px;
+    color: #6a6a6a;
+    display: grid;
+    gap: 4px;
+    text-align: center;
+    padding: 6px 0;
+}
+
+.nav-item.is-active {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    color: currentColor;
+}
+
+.nav-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+}
+
+button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
