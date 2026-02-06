@@ -80,7 +80,8 @@ if (continueBtn) {
     if (amountCents === 0) {
       return;
     }
-    window.prompt("Input OTP To Withdraw: " + formatAmount(amountCents) + " to Your Account: 2383638478349");
+    window.location.href =
+      "success.html?amount=" + encodeURIComponent(formatAmount(amountCents));
   });
 }
 

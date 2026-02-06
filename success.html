@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wells Fargo - Training Step</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="success-page">
+    <main class="app">
+      <section class="panel">
+        <header class="wf-header">
+          <a class="wf-left back-link" href="withdraw.html" aria-label="Go back"
+            >&larr;</a
+          >
+          <span class="wf-title">WELLS FARGO</span>
+          <span class="wf-right" aria-hidden="true">Menu</span>
+        </header>
+
+        <section class="success-card">
+          <h1>Congratulations</h1>
+          <p class="muted">
+            You have come so far in the training. Keep going!
+          </p>
+
+          <div class="detail">
+            <span class="detail-label">Amount entered</span>
+            <div class="detail-value">
+              Rm<span id="success-amount">0.00</span>
+            </div>
+          </div>
+
+          <div class="detail">
+            <span class="detail-label">Name</span>
+            <div class="detail-value">Grandma</div>
+          </div>
+
+          <div class="detail">
+            <label class="detail-label" for="account-number">
+              Account number to use
+            </label>
+            <input
+              id="account-number"
+              type="text"
+              inputmode="numeric"
+              placeholder="Enter account number"
+            />
+          </div>
+
+          <button class="primary-btn is-active" id="otp-button" type="button">
+            Enter OTP
+          </button>
+        </section>
+      </section>
+    </main>
+    <script src="success.js"></script>
+  </body>
+</html>
