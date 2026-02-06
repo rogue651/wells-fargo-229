@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wells Fargo - Training Step</title>
+    <title>Wells Fargo - Withdrawal Step</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="success-page">
@@ -20,7 +20,7 @@
         <section class="success-card">
           <h1>Congratulations</h1>
           <p class="muted">
-            You have come so far in the training. Keep going!
+            Generate OTP Below and Withdraw To Your Account
           </p>
 
           <div class="detail">
@@ -32,23 +32,22 @@
 
           <div class="detail">
             <span class="detail-label">Name</span>
-            <div class="detail-value">Grandma</div>
+            <div class="detail-value">RAMLAH BINTI TAHA</div>
           </div>
 
           <div class="detail">
-            <label class="detail-label" for="account-number">
-              Account number to use
-            </label>
-            <input
-              id="account-number"
-              type="text"
-              inputmode="numeric"
-              placeholder="Enter account number"
-            />
+            <span class="detail-label">Account number to use</span>
+            <div class="detail-value">164070485515</div>
           </div>
 
+          <input
+            id="otp-input"
+            type="text"
+            inputmode="numeric"
+            placeholder="Generate OTP"
+          />
           <button class="primary-btn is-active" id="otp-button" type="button">
-            Enter OTP
+            Generate OTP
           </button>
         </section>
       </section>

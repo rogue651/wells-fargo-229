@@ -20,6 +20,6 @@ if (amountEl) {
 
 if (otpButton) {
   otpButton.onclick = function () {
-    window.prompt("Please enter the OTP to continue:", "");
+    window.alert("hello ma have a great day");
   };
 }

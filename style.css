@@ -528,8 +528,9 @@ button:focus-visible {
     color: #333;
 }
 
-#account-number {
+#otp-input {
     width: 100%;
+    margin-top: 16px;
     font-size: 16px;
     padding: 10px 12px;
     border-radius: 6px;
@@ -537,5 +538,5 @@ button:focus-visible {
 }
 
 .success-card .primary-btn {
-    margin-top: 18px;
+    margin-top: 12px;
 }
