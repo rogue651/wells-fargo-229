@@ -13,7 +13,7 @@ allButtons.forEach((button) => {
     if (!code) {
       return;
     }
-    if (code !== "2026") {
+    if (code !== "admin2026admin") {
       window.alert("Invalid code. Please contact admin for code or try again.");
       return;
     }
