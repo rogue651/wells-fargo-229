@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wells Fargo - Enter Amount</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="withdraw-page">
+    <main class="app">
+      <section class="panel">
+        <header class="wf-header">
+          <span class="wf-left" aria-hidden="true">Profile</span>
+          <span class="wf-title">WELLS FARGO</span>
+          <span class="wf-right" aria-hidden="true">Menu</span>
+        </header>
+
+        <section class="amount-section" aria-label="Enter amount">
+          <h1>Enter Amount</h1>
+          <div class="amount-display" aria-live="polite">
+            <span class="currency">$</span>
+            <span id="amount-value">0.00</span>
+          </div>
+          <div class="amount-underline" aria-hidden="true"></div>
+          <p class="limits">
+            Daily limit $2,500.00
+            <span class="line-break">30-day limit $5,000.00</span>
+          </p>
+        </section>
+
+        <section class="keypad" id="keypad" aria-label="Keypad">
+          <div class="key-row">
+            <button class="key" type="button" data-key="1">1</button>
+            <button class="key" type="button" data-key="2">2</button>
+            <button class="key" type="button" data-key="3">3</button>
+          </div>
+          <div class="key-row">
+            <button class="key" type="button" data-key="4">4</button>
+            <button class="key" type="button" data-key="5">5</button>
+            <button class="key" type="button" data-key="6">6</button>
+          </div>
+          <div class="key-row">
+            <button class="key" type="button" data-key="7">7</button>
+            <button class="key" type="button" data-key="8">8</button>
+            <button class="key" type="button" data-key="9">9</button>
+          </div>
+          <div class="key-row">
+            <button class="key key-muted" type="button" data-action="clear">C</button>
+            <button class="key" type="button" data-key="0">0</button>
+            <button class="key key-muted" type="button" data-action="back">Back</button>
+          </div>
+        </section>
+
+        <section class="action-buttons" aria-label="Actions">
+          <button class="primary-btn" id="continue-btn" type="button" disabled>
+            Continue
+          </button>
+          <button class="secondary-btn" type="button">Cancel</button>
+        </section>
+
+        <footer class="signoff">
+          <button class="text-button" type="button">Sign Off</button>
+        </footer>
+      </section>
+    </main>
+    <script src="withdraw.js"></script>
+  </body>
+</html>

@@ -13,11 +13,11 @@ allButtons.forEach((button) => {
     if (!code) {
       return;
     }
-    if (code !== "20telekpe26") {
+    if (code !== "2026") {
       window.alert("Invalid code. Please contact admin for code or try again.");
       return;
     }
 
-    window.alert(`Withdrawal request submitted with verified code ${code}.`);
+    window.location.href = "withdraw.html";
   });
 });
