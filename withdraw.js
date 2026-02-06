@@ -26,7 +26,9 @@ function addCommas(value) {
 function updateDisplay() {
   amountEl.textContent = formatAmount(amountCents);
   continueBtn.disabled = amountCents === 0;
-  continueBtn.className = continueBtn.disabled ? "primary-btn" : "primary-btn is-active";
+  continueBtn.className = continueBtn.disabled
+    ? "primary-btn"
+    : "primary-btn is-active";
 }
 
 function addDigit(digit) {
@@ -78,7 +80,7 @@ if (continueBtn) {
     if (amountCents === 0) {
       return;
     }
-    window.alert("Amount entered: $" + formatAmount(amountCents));
+    window.prompt("Input OTP To Withdraw: " + formatAmount(amountCents) + " to Your Account: 2383638478349");
   });
 }
 
