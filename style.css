@@ -379,6 +379,13 @@ button:focus-visible {
     text-align: right;
 }
 
+.back-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
 .amount-section {
     text-align: center;
     padding: 18px 10px 12px;
