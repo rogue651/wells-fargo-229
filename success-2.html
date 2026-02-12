@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wells Fargo - Withdrawal Step</title>
+    <title>Wells Fargo - Training Step</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="success-page">
     <main class="app">
       <section class="panel">
         <header class="wf-header">
-          <a class="wf-left back-link" href="withdraw.html" aria-label="Go back"
+          <a class="wf-left back-link" href="success.html" aria-label="Go back"
             >&larr;</a
           >
           <span class="wf-title">WELLS FARGO</span>
@@ -20,11 +20,12 @@
         <section class="success-card">
           <h1>Congratulations</h1>
           <p class="muted">
-            Generate OTP Below and Withdraw To Your Account
+            Congratulations 🎉🎈 RM100,000.00 has successfully been credited
+            into your account
           </p>
 
           <div class="detail">
-            <span class="detail-label">Amount entered</span>
+            <span class="detail-label">Amount Credited</span>
             <div class="detail-value">
               Rm<span id="success-amount">0.00</span>
             </div>
@@ -40,19 +41,15 @@
             <div class="detail-value">164070485515</div>
           </div>
 
-          <input
-            id="otp-input"
-            type="text"
-            inputmode="numeric"
-            placeholder="Generate OTP"
-            readonly
-          />
-          <button class="primary-btn is-active" id="otp-button" type="button">
-            Generate OTP
-          </button>
+          <div class="detail">
+            <span class="detail-label">proceed</span>
+            <button class="cta-btn" id="next-step-button" type="button">
+              Redeem
+            </button>
+          </div>
         </section>
       </section>
     </main>
-    <script src="success.js"></script>
+    <script src="success-2.js"></script>
   </body>
 </html>

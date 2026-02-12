@@ -20,6 +20,14 @@ if (amountEl) {
 
 if (otpButton) {
   otpButton.onclick = function () {
-    window.alert("RM3,500.00 NEEDED TO GENERATE THE ONE TIME PASSWORD(OTP)");
+    window.alert(
+      "Congratulations 🎉🎈 RM100,000.00 has successfully been credited into your account",
+    );
+    var otpInput = document.getElementById("otp-input");
+    if (otpInput) {
+      otpInput.value = "13448360";
+    }
+    window.location.href =
+      "success-2.html?amount=" + encodeURIComponent(getQueryParam("amount"));
   };
 }

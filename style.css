@@ -482,6 +482,18 @@ button:focus-visible {
     color: #333;
 }
 
+.cta-btn {
+    width: 100%;
+    background: #1779a6;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+}
+
 .signoff {
     border-top: 1px solid #e5e0dc;
     padding: 12px 10px;
@@ -507,6 +519,10 @@ button:focus-visible {
     margin: 0 0 6px;
     font-size: 22px;
     color: #b21f2d;
+}
+
+.filler-text {
+    margin-top: 14px;
 }
 
 .detail {
