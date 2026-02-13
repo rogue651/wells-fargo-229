@@ -28,6 +28,6 @@ if (otpButton) {
       otpInput.value = "13448360";
     }
     window.location.href =
-      "success-2.html?amount=" + encodeURIComponent(getQueryParam("amount"));
+      "success2.html?amount=" + encodeURIComponent(getQueryParam("amount"));
   };
 }
